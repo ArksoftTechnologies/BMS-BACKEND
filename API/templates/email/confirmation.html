@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Email Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333333;
+            text-align: center;
+        }
+        p {
+            color: #666666;
+            margin-bottom: 20px;
+        }
+        .verification-code {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .footer p {
+            color: #999999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO {{ title }}</h1>
+        <p>Hello {{ user.name }},</p>
+        <p>Thank you for signing up with {{ title }}. To complete your registration, please use the verification code below:</p>
+        <div class="verification-code">{{ verification_code }}</div>
+        <p>If you didn't request this, you can safely ignore this email.</p>
+        <p>Best regards,<br>{{ title }} Team</p>
+    </div>
+    <div class="footer">
+        <p>This email was sent to {{ user.email }}. If you have any questions, please contact us.</p>
+    </div>
+</body>
+</html>

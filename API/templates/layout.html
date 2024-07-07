@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta content="Codescandy" name="author" />
+      <title>{{title}}</title>
+      <link href="{{url_for('static', filename='assets/libs/tiny-slider/dist/tiny-slider.css', _external=True)}}" rel="stylesheet" />
+      <link href="{{url_for('static', filename='assets/libs/slick-carousel/slick/slick.css', _external=True)}}" rel="stylesheet" />
+      <link href="{{url_for('static', filename='assets/libs/slick-carousel/slick/slick-theme.css', _external=True)}}" rel="stylesheet" />
+      <!-- Favicon icon-->
+      <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='assets/images/favicon/favicon.ico', _external=True)}}" />
+
+      <!-- Libs CSS -->
+      <link href="{{url_for('static', filename='assets/libs/bootstrap-icons/font/bootstrap-icons.min.css', _external=True)}}" rel="stylesheet" />
+      <link href="{{url_for('static', filename='assets/libs/feather-webfont/dist/feather-icons.css', _external=True)}}" rel="stylesheet" />
+      <link href="{{url_for('static', filename='assets/libs/simplebar/dist/simplebar.min.css', _external=True)}}" rel="stylesheet" />
+
+      <!-- Theme CSS -->
+      <link rel="stylesheet" href="{{url_for('static', filename='assets/css/theme.min.css', _external=True)}}" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8S4MT3EYG"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() {
+            dataLayer.push(arguments);
+         }
+         gtag("js", new Date());
+
+         gtag("config", "G-M8S4MT3EYG");
+      </script>
+   </head>
+
+   <body>
+{% block content %}
+{% endblock %}
+
+      <!-- Javascript-->
+      <!-- Libs JS -->
+<!--  <script src="../assets/libs/jquery/dist/jquery.min.js"></script>-->
+      <script src="{{url_for('static', filename='/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+      <script src="{{url_for('static', filename='/assets/libs/simplebar/dist/simplebar.min.js')}}"></script>
+
+      <!-- Theme JS -->
+      <script src="{{url_for('static', filename='/assets/js/theme.min.js')}}"></script>
+
+      <script src="{{url_for('static', filename='/assets/js/vendors/jquery.min.js')}}"></script>
+      <script src="{{url_for('static', filename='/assets/libs/slick-carousel/slick/slick.min.js')}}"></script>
+      <script src="{{url_for('static', filename='/assets/js/vendors/slick-slider.js')}}"></script>
+      <script src="{{url_for('static', filename='/assets/libs/tiny-slider/dist/min/tiny-slider.js')}}"></script>
+      <script src="{{url_for('static', filename='/assets/js/vendors/tns-slider.js')}}"></script>
+      <script src="{{url_for('static', filename='/assets/js/vendors/zoom.js')}}"></script>
+      <script src="{{url_for('static', filename='/assets/js/vendors/validation.js')}}"></script>
+   </body>
+
+</html>
